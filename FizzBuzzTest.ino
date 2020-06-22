@@ -14,10 +14,10 @@ void loop() {
   if(t%3==0 && t%5==0) {
     Serial.print("FizzBuzz");
   } else {
-    if (t%3==0) {
+    if (t%5==0) {
       Serial.print("Fizz");
     } else {
-      if (t%5==0) {
+      if (t%3==0) {
        Serial.print("Buzz");
       } else {
        Serial.print("");
@@ -27,5 +27,6 @@ void loop() {
   Serial.println("");
   Serial.print(t);
   delay(200);
+  
   }
 }
